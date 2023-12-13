@@ -24,6 +24,7 @@ public class Ejemplo041 {
         // arreglo1[2] = 1000;
         // la propiedad .length nos da el numero de elementos que tiene el 
         // arreglo al que esta asociado
+        // agregar un acumulador
         String acumulador = "";
         int suma = 0;
         for (int i = 0; i < arreglo1.length; i++) {
@@ -34,10 +35,11 @@ public class Ejemplo041 {
                     i,
                     arreglo1[i]);
         }
+        // crear un string format para sacar el valor de la suma total
         acumulador = String.format("%sLa suma total es: %d\n",
                 acumulador,
                 suma);
-        
+        // Presentar acumulador con .toUpperCase para que se presente en mayusculas
         System.out.printf("%s", acumulador.toUpperCase());
 
     }
